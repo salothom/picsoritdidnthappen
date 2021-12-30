@@ -1,5 +1,18 @@
+:root {
+  /** sunny side **/
+  --egg-shell: #f4f1de;
+  --terracotta: #e07a5f;
+  --dark-blue: #3d405b;
+  --dark-blue-highlight: #52567a;
+  --green: #81b29a;
+  --yellow: #f2cc8f;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-color: var(--egg-shell);
 }
 
 .App-logo {
@@ -26,6 +39,44 @@
 
 .App-link {
   color: #61dafb;
+}
+.componentMain {
+  padding: 25px;
+}
+.headingMain {
+  text-align: center;
+  color: var(--terracotta);
+}
+
+.footer {
+  background-color: var(--dark-blue);
+  color: var(--egg-shell);
+  margin-top: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footerButton {
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.footerButton:hover {
+  background-color: var(--dark-blue-highlight);
+}
+
+.huntButton{
+  background-color: var(--terracotta);
+  padding: 7px;
+  min-height: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+
+.twentyWidth {
+  width: 20%;
 }
 
 @keyframes App-logo-spin {
