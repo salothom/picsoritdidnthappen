@@ -35,24 +35,25 @@ export default function Hunts() {
       score: 837
     }
   ];
+ 
   return (
     <div>
       <h1 className="headingMain">Active Scavenger Hunts</h1>
       {HuntNames.map(hunt => {
         if (hunt.active) {
           return (
-            <div className="huntButton">
+            <div key={hunt.name} className="huntButton">
               <div>{hunt.name} </div>
               <div> Current score: {hunt.score}</div>
             </div>
           );
         }
       })}
-            <h1 className="headingMain">Archived Scavenger Hunts</h1>
-            {HuntNames.map(hunt => {
+      <h1 className="headingMain">Archived Scavenger Hunts</h1>
+      {HuntNames.map(hunt => {
         if (!hunt.active) {
           return (
-            <div className="huntButton">
+            <div key={hunt.name} className="huntButton">
               <div>{hunt.name} </div>
               <div> Final score: {hunt.score}</div>
             </div>
