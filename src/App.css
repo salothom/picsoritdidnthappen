@@ -42,6 +42,7 @@
 }
 .componentMain {
   padding: 25px;
+  height: 100%;
 }
 .headingMain {
   text-align: center;
@@ -64,7 +65,13 @@
   background-color: var(--dark-blue-highlight);
 }
 
-.huntButton{
+.addComponent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.huntButton {
   background-color: var(--terracotta);
   padding: 7px;
   min-height: 50px;
@@ -72,11 +79,37 @@
   text-align: center;
   border-radius: 5px;
 }
-
-
+.fullInputWidth {
+  display: flex;
+  flex-direction: column;
+}
+.halfInputWidth {
+  display: flex;
+  flex-direction: row;
+}
 
 .twentyWidth {
   width: 20%;
+}
+
+.addButton {
+  margin: 5px;
+  width: 33%;
+  align-self: center;
+  text-align: center;
+  min-height: 50px;
+  border-radius: 5px;
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.addButton:hover {
+  background-color: var(--dark-blue-highlight);
+}
+
+.addButtonSection {
+  margin-top: auto;
+  display: flex;
 }
 
 @keyframes App-logo-spin {
