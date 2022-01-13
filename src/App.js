@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <Component workflowStep={workflowStep}></Component>
+      <Component setWorkflowStep={setWorkflowStep} workflowStep={workflowStep}></Component>
       <Footer setWorkflowStep={setWorkflowStep}></Footer>
     </div>
   );

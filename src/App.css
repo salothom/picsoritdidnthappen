@@ -43,17 +43,44 @@
 .componentMain {
   padding: 25px;
   height: 100%;
+  background-color: var(--egg-shell);
 }
 .headingMain {
   text-align: center;
   color: var(--terracotta);
 }
 
+.selectedToggle{
+  border-bottom: var(--egg-shell) 6px solid;
+}
+
+.firstSecondButtonHolder{
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+
+}
+.secondaryButton{
+  border: var(--dark-blue) 3px solid;
+  background-color: unset;
+  padding: 5px;
+  border-radius: 8px;
+  width: 50%;
+  text-align: center;
+}
+
+.secondaryButton:hover{
+  background-color: var(--dark-blue);
+  color: var(--egg-shell);
+}
 .footer {
   background-color: var(--dark-blue);
   color: var(--egg-shell);
   margin-top: auto;
   display: flex;
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
   justify-content: space-evenly;
 }
 .footerButton {
@@ -107,10 +134,50 @@
   background-color: var(--dark-blue-highlight);
 }
 
-.addButtonSection {
+.marginTopAuto {
   margin-top: auto;
   display: flex;
 }
+.friendsProfile{
+  border: var(--dark-blue) 3px solid;
+  border-radius: 8px;
+}
+.friendsButton{
+  width: 50%;
+    background-color: var(--dark-blue);
+    text-align: center;
+    padding-bottom: 2px;
+    padding-top: 8px;
+    color: var(--egg-shell);
+}
+
+.flexDisplay{
+  display: flex;
+}
+.followItem{
+  padding: 5px;
+  border-top: 1px var(--dark-blue) groove;
+
+}
+
+.ProfileInfo{
+  border: 2px black solid;
+
+  margin-bottom: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+  flex-direction: column;
+}
+
+.ProfileInfo H2{
+  margin:0px;
+}
+
+.bufferHug{
+
+  padding: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;}
 
 @keyframes App-logo-spin {
   from {

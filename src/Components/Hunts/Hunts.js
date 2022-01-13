@@ -1,7 +1,6 @@
 import React from "react";
-
-export default function Hunts() {
-  const HuntNames = [
+export const HuntNames = {
+  active: [
     {
       name: "SummerSpash wow Zone",
       id: "1a1a",
@@ -18,14 +17,7 @@ export default function Hunts() {
       end: "06/06/2022",
       score: 453
     },
-    {
-      name: "Cool Time Fun Game",
-      id: "3c3c",
-      active: false,
-      start: "05/07/2021",
-      end: "06/06/2021",
-      score: 343
-    },
+
     {
       name: "Tasty nice good Game",
       id: "3c3c",
@@ -34,12 +26,24 @@ export default function Hunts() {
       end: "06/06/2021",
       score: 837
     }
-  ];
- 
+  ],
+  archived: [
+    {
+      name: "Cool Time Fun Game",
+      id: "3c3c",
+      active: false,
+      start: "05/07/2021",
+      end: "06/06/2021",
+      score: 343
+    }
+  ]
+};
+
+export default function Hunts() {
   return (
     <div>
       <h1 className="headingMain">Active Scavenger Hunts</h1>
-      {HuntNames.map(hunt => {
+      {HuntNames.active.map(hunt => {
         if (hunt.active) {
           return (
             <div key={hunt.name} className="huntButton">
@@ -50,7 +54,7 @@ export default function Hunts() {
         }
       })}
       <h1 className="headingMain">Archived Scavenger Hunts</h1>
-      {HuntNames.map(hunt => {
+      {HuntNames.archived.map(hunt => {
         if (!hunt.active) {
           return (
             <div key={hunt.name} className="huntButton">

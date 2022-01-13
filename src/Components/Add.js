@@ -51,7 +51,7 @@ export default function Add() {
         </div>
       )}
 
-      <div className="addButtonSection">
+      <div className="marginTopAuto flexDisplay">
         <div className="addButton" onClick={() => setAdditionType("HuntItem")}>
           Hunt Item
         </div>
