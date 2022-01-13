@@ -50,17 +50,29 @@
   color: var(--terracotta);
 }
 
-.selectedToggle{
+.selectedToggle {
   border-bottom: var(--egg-shell) 6px solid;
 }
 
-.firstSecondButtonHolder{
+.firstSecondButtonHolder {
   display: flex;
   padding: 5px;
   justify-content: center;
-
 }
-.secondaryButton{
+.primaryButton {
+  border: var(--dark-blue) 3px solid;
+  background-color: var(--dark-blue);
+  padding: 5px;
+  border-radius: 8px;
+  width: 50%;
+  text-align: center;
+  color: var(--egg-shell);
+}
+.primaryButton:hover {
+  color: var(--dark-blue);
+  background-color: var(--egg-shell);
+}
+.secondaryButton {
   border: var(--dark-blue) 3px solid;
   background-color: unset;
   padding: 5px;
@@ -69,7 +81,7 @@
   text-align: center;
 }
 
-.secondaryButton:hover{
+.secondaryButton:hover {
   background-color: var(--dark-blue);
   color: var(--egg-shell);
 }
@@ -106,6 +118,57 @@
   text-align: center;
   border-radius: 5px;
 }
+
+.bufferBottom {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+.huntItems {
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  justify-content: space-between;
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  height: 80%;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .fullInputWidth {
   display: flex;
   flex-direction: column;
@@ -115,8 +178,29 @@
   flex-direction: row;
 }
 
+.formButton {
+  background-color: var(--dark-blue);
+  border: var(--dark-blue) 2px solid;
+  margin-top: 16px;
+  width: 80%;
+  text-align: center;
+  border-radius: 8px;
+  color: var(--egg-shell);
+  padding: 1px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formButton:hover{
+  color: var(--dark-blue);
+  background-color: var(--egg-shell)
+}
+
 .twentyWidth {
   width: 20%;
+}
+.widthFull{
+  width: 100%
 }
 
 .addButton {
@@ -138,29 +222,32 @@
   margin-top: auto;
   display: flex;
 }
-.friendsProfile{
+.friendsProfile {
   border: var(--dark-blue) 3px solid;
   border-radius: 8px;
 }
-.friendsButton{
+.friendsButton {
   width: 50%;
-    background-color: var(--dark-blue);
-    text-align: center;
-    padding-bottom: 2px;
-    padding-top: 8px;
-    color: var(--egg-shell);
+  background-color: var(--dark-blue);
+  text-align: center;
+  padding-bottom: 2px;
+  padding-top: 8px;
+  color: var(--egg-shell);
 }
 
-.flexDisplay{
+.flexDisplay {
   display: flex;
 }
-.followItem{
+.followItem {
   padding: 5px;
   border-top: 1px var(--dark-blue) groove;
-
+}
+.followItem:hover {
+  color: var(--egg-shell);
+  background-color: var(--dark-blue);
 }
 
-.ProfileInfo{
+.ProfileInfo {
   border: 2px black solid;
 
   margin-bottom: 15px;
@@ -169,15 +256,15 @@
   flex-direction: column;
 }
 
-.ProfileInfo H2{
-  margin:0px;
+.ProfileInfo h2 {
+  margin: 0px;
 }
 
-.bufferHug{
-
+.bufferHug {
   padding: 5px;
   padding-top: 15px;
-  padding-bottom: 15px;}
+  padding-bottom: 15px;
+}
 
 @keyframes App-logo-spin {
   from {

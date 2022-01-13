@@ -9,7 +9,7 @@ import Add from './Add';
 export default function Component({ workflowStep,setWorkflowStep }) {
   return (
     <div className="componentMain">
-      {workflowStep == "Hunts" && <Hunts></Hunts>}
+      {workflowStep == "Hunts" && <Hunts setWorkflowStep={setWorkflowStep}></Hunts>}
       {workflowStep == "Profile" && <Profile setWorkflowStep={setWorkflowStep}></Profile>}
       {workflowStep == "Home" && <Home></Home>}
       {workflowStep == "Add" && <Add></Add>}

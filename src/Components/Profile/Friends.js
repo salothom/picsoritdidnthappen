@@ -35,11 +35,11 @@ export default function Friends() {
         <div>
           {friendType == "following" &&
             friends.following.map(follow => {
-              return <div className="followItem">{follow.name}</div>;
+              return <div key={follow.username}  className="followItem">{follow.name}</div>;
             })}
           {friendType == "followers" &&
             friends.followers.map(follow => {
-              return <div className="followItem">{follow.name}</div>;
+              return <div  key={follow.username} className="followItem">{follow.name}</div>;
             })}
         </div>
       </div>

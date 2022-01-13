@@ -10,7 +10,7 @@ export default function Scores({ hunts, setWorkflowStep }) {
     score += hunt.score;
     activeHuntsCount += 1;
     return (
-      <div>
+      <div key={hunt.id} >
         {hunt.name} {hunt.score}
       </div>
     );
@@ -19,7 +19,7 @@ export default function Scores({ hunts, setWorkflowStep }) {
     score += hunt.score;
     archievedHuntsCount += 1;
     return (
-      <div>
+      <div key={hunt.id} >
         {hunt.name} {hunt.score}
       </div>
     );

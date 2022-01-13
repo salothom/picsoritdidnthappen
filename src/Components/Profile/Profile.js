@@ -1,5 +1,5 @@
 import React from "react";
-import { HuntNames } from "../Hunts/Hunts";
+import { HuntNames } from "../Hunts/mockHuntData";
 import Scores from "./Scores";
 import Friends from "./Friends";
 
