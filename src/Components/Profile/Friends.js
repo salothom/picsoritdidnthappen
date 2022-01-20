@@ -20,13 +20,17 @@ export default function Friends() {
       <div className="friendsProfile">
         <div className="flexDisplay friendsHeader">
           <div
-            className={`friendsButton ${friendType == "following"  ? "selectedToggle" : ""}`}
+            className={`friendsButton ${
+              friendType == "following" ? "selectedToggle" : ""
+            }`}
             onClick={() => setFriendType("following")}
           >
             Following
           </div>
           <div
-            className={`friendsButton ${friendType == "followers"  ? "selectedToggle" : ""}`}
+            className={`friendsButton ${
+              friendType == "followers" ? "selectedToggle" : ""
+            }`}
             onClick={() => setFriendType("followers")}
           >
             Followers
@@ -35,11 +39,19 @@ export default function Friends() {
         <div>
           {friendType == "following" &&
             friends.following.map(follow => {
-              return <div key={follow.username}  className="followItem">{follow.name}</div>;
+              return (
+                <div key={follow.username} className="followItem">
+                  {follow.name}
+                </div>
+              );
             })}
           {friendType == "followers" &&
             friends.followers.map(follow => {
-              return <div  key={follow.username} className="followItem">{follow.name}</div>;
+              return (
+                <div key={follow.username} className="followItem">
+                  {follow.name}
+                </div>
+              );
             })}
         </div>
       </div>

@@ -6,8 +6,6 @@ export default function CompleteTask({
   selectedHuntItem,
   currentHuntView
 }) {
- 
-
   return (
     <div id="myModal" class="modal">
       <div class="modal-content">

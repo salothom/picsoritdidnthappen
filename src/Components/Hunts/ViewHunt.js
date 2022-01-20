@@ -4,7 +4,7 @@ import HuntItems from "./HuntItems";
 export default function ViewHunt({ currentHuntView, setCurrentHuntView }) {
   return (
     <div>
-      <div className='bufferBottom'>
+      <div className="bufferBottom">
         <h2>{currentHuntView.name}</h2>
         <div>{currentHuntView.description}</div>
       </div>
