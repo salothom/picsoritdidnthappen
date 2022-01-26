@@ -6,7 +6,7 @@ export default function Hunts({ setWorkflowStep }) {
   const [huntType, setHuntType] = useState("Active");
   const [currentHuntView, setCurrentHuntView] = useState();
   return (
-    <div className="">
+    <div className="componentMain">
       {!currentHuntView && HuntNames && (
         <>
           <h2>Scavanger Hunts</h2>

@@ -3,7 +3,7 @@ import FooterButton from "./footerButton";
 
 export default function Footer({setWorkflowStep}) {
     
-  const footerButtons = ["Home", "Add", "Search", "Hunts", "Profile"];
+  const footerButtons = ["Home", "Search", "Hunts", "Profile"];
 
   return (
     <div className="footer">

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Search() {
+export default function DiscoverMore() {
     return (
         <div>
-            Search
+            
         </div>
     )
 }

@@ -132,6 +132,8 @@ export const HuntNames = {
       start: "05/05/2022",
       end: "06/06/2022",
       score: 1726,
+      city: "Austin",
+      state: "Texas",
       description:
         "I became paranoid that the school of jellyfish was spying on me.  The miniature pet elephant became the envy of the neighborhood.The truth is that you pay for your lifestyle in hours."
     },
@@ -142,6 +144,8 @@ export const HuntNames = {
       start: "05/05/2022",
       end: "06/06/2022",
       score: 453,
+      city: "Austin",
+      state: "Texas",
       description:
         "I became paranoid that the school of jellyfish was spying on me.  The miniature pet elephant became the envy of the neighborhood.The truth is that you pay for your lifestyle in hours."
     },
@@ -152,6 +156,8 @@ export const HuntNames = {
       active: true,
       start: "05/07/2021",
       end: "06/06/2021",
+      city: "Houston",
+      state: "Texas",
       score: 837,
       description:
         "I became paranoid that the school of jellyfish was spying on me.  The miniature pet elephant became the envy of the neighborhood.The truth is that you pay for your lifestyle in hours."
@@ -164,6 +170,8 @@ export const HuntNames = {
       active: false,
       start: "05/07/2021",
       end: "06/06/2021",
+      city: "Dallas",
+      state: "Texas",
       score: 343,
       description:
         "I became paranoid that the school of jellyfish was spying on me.  The miniature pet elephant became the envy of the neighborhood.The truth is that you pay for your lifestyle in hours."
