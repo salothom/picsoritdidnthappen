@@ -74,6 +74,8 @@ export default function Hunts({ setWorkflowStep }) {
           Create New Scanavger Hunt
         </div>
       </div>
+      <div className="bufferBottom"></div>
+
     </div>
   );
 }

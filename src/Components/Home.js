@@ -2,8 +2,10 @@ import React from 'react'
 
 export default function Home() {
     return (
-        <div>
+        <div className="componentMain">
             Home!
+            <div className="bufferBottom"></div>
+
         </div>
     )
 }

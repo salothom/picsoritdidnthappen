@@ -18,6 +18,8 @@ export default function Search() {
         </div>
       </div>
       <Suggestions></Suggestions>
+      <div className="bufferBottom"></div>
+
     </div>
   );
 }

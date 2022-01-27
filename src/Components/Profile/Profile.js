@@ -97,6 +97,7 @@ export default function Profile({ setWorkflowStep }) {
           bleh bleh bleh bleh bleh bleh bleh bleh bleh bleh
         </div>
       </div>
+      <div className="bufferBottom"></div>
     </>
   );
 }

@@ -1,12 +1,15 @@
 import React from "react";
 import HuntItems from "./HuntItems";
 import settings from "../../svg/settings.svg";
+import share from "../../svg/share.svg";
 
 export default function ViewHunt({ currentHuntView, setCurrentHuntView }) {
   return (
     <div>
       <div className="settingsBar flexDisplay">
-        <img src={settings} alt="Kiwi standing on oval"></img>
+      <img src={share} alt="share"></img>
+
+        <img src={settings} alt="settings"></img>
       </div>
       <div className="bufferBottom">
         <h2>{currentHuntView.name}</h2>
