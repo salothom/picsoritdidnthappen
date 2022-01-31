@@ -1,6 +1,6 @@
 export const fakeHuntItems = [
   {
-    name: "Boat Lake Austin",
+    label: "Boat Lake Austin",
     city: "Austin",
     state: "Texas",
     country: "USA",
@@ -9,7 +9,7 @@ export const fakeHuntItems = [
     completed: false
   },
   {
-    name: "Boat Lake Travis",
+    label: "Boat Lake Travis",
     city: "Austin",
     state: "Texas",
     country: "USA",
@@ -18,7 +18,7 @@ export const fakeHuntItems = [
     completed: false
   },
   {
-    name: "Swim in Barton Springs Pool",
+    label: "Swim in Barton Springs Pool",
     city: "Austin",
     state: "Texas",
     country: "USA",
@@ -28,7 +28,7 @@ export const fakeHuntItems = [
     description: "Always at 68 dergees"
   },
   {
-    name: "Go to the Quickie Pickie",
+    label: "Go to the Quickie Pickie",
     city: "Austin",
     state: "Texas",
     country: "USA",
@@ -38,7 +38,7 @@ export const fakeHuntItems = [
     description: " Cool Hang out spot"
   },
   {
-    name: "Go to the Cavalier",
+    label: "Go to the Cavalier",
     city: "Austin",
     state: "Texas",
     country: "USA",
@@ -48,7 +48,7 @@ export const fakeHuntItems = [
     description: "You will likely see Caleb and Charles there"
   },
   {
-    name: "Magnolia Silos",
+    label: "Magnolia Silos",
     city: "Waco",
     state: "Texas",
     country: "USA",
@@ -58,7 +58,7 @@ export const fakeHuntItems = [
     description: " Chip and Joann Gains"
   },
   {
-    name: "Float the River",
+    label: "Float the River",
     city: "San Marcos",
     state: "Texas",
     country: "USA",
@@ -67,7 +67,7 @@ export const fakeHuntItems = [
     completed: true
   },
   {
-    name: "Play Spike Ball",
+    label: "Play Spike Ball",
     city: "Austin",
     state: "Texas",
     country: "USA",
@@ -76,7 +76,7 @@ export const fakeHuntItems = [
     completed: true
   },
   {
-    name: "Go to the Capital Building",
+    label: "Go to the Capital Building",
     city: "Austin",
     state: "Texas",
     country: "USA",
@@ -86,7 +86,7 @@ export const fakeHuntItems = [
     description: "It is made of pink limestone"
   },
   {
-    name: "See some live honkey tonk Music",
+    label: "See some live honkey tonk Music",
     city: "Austin",
     state: "Texas",
     country: "USA",
@@ -95,7 +95,7 @@ export const fakeHuntItems = [
     completed: false
   },
   {
-    name: "Tell NASA you have a crush on it",
+    label: "Tell NASA you have a crush on it",
     city: "Houston",
     state: "Texas",
     country: "USA",
@@ -104,7 +104,7 @@ export const fakeHuntItems = [
     completed: false
   },
   {
-    name: "Play PickleBall",
+    label: "Play PickleBall",
     city: "Franklin",
     state: "Texas",
     country: "USA",
@@ -113,7 +113,7 @@ export const fakeHuntItems = [
     completed: true
   },
   {
-    name: "Go see the Carengee Library",
+    label: "Go see the Carengee Library",
     city: "Franklin",
     state: "Texas",
     country: "USA",
@@ -126,8 +126,8 @@ export const fakeHuntItems = [
 export const HuntNames = {
   active: [
     {
-      name: "SummerSpash wow Zone",
-      id: "1a1a",
+      label: "SummerSpash wow Zone",
+      value: "1a1a",
       active: true,
       start: "05/05/2022",
       end: "06/06/2022",
@@ -138,8 +138,8 @@ export const HuntNames = {
         "I became paranoid that the school of jellyfish was spying on me.  The miniature pet elephant became the envy of the neighborhood.The truth is that you pay for your lifestyle in hours."
     },
     {
-      name: "Wood Run Fun Party",
-      id: "2b2b",
+      label: "Wood Run Fun Party",
+      value: "2b2b",
       active: true,
       start: "05/05/2022",
       end: "06/06/2022",
@@ -151,8 +151,8 @@ export const HuntNames = {
     },
 
     {
-      name: "Tasty nice good Game",
-      id: "3c3c",
+      label: "Tasty nice good Game",
+      value: "3c3c",
       active: true,
       start: "05/07/2021",
       end: "06/06/2021",
@@ -165,8 +165,8 @@ export const HuntNames = {
   ],
   archived: [
     {
-      name: "Cool Time Fun Game",
-      id: "3c3c",
+      label: "Cool Time Fun Game",
+      value: "3c3c",
       active: false,
       start: "05/07/2021",
       end: "06/06/2021",
@@ -178,3 +178,51 @@ export const HuntNames = {
     }
   ]
 };
+
+export const GenreOptions = [
+  {
+    genre: "FoodDrink",
+    label: "Bars",
+    value: "Bars"
+  },
+  {
+    genre: "FoodDrink",
+    label: "Resturants",
+    value: "Resturants",
+  },
+  {
+    genre: "FoodDrink",
+    label: "Patios",
+    value: "Patios",
+  },
+  {
+    genre: "FoodDrink",
+    label: "Cooking/Baking",
+    value: "Cooking/Baking",
+  },
+  {
+    genre: "Outside",
+    label: "Hiking",
+    value:  "Hiking",
+  },
+  {
+    genre: "Outside",
+    label: "Camping",
+    value: "Camping",
+  },
+  {
+    genre: "Outside",
+    label: "Sports",
+    value: "Sports",
+  },
+  {
+    genre: "Outside",
+    label: "Parks",
+    value: "Parks",
+  },
+  {
+    genre: "Games",
+    label: "Games",
+    value: "Games"
+  }
+];

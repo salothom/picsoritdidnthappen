@@ -19,7 +19,7 @@ export default function CompleteTask({
             <input
               type="text"
               id="huntItemName"
-              value={currentHuntView.name}
+              value={currentHuntView.label}
               name="huntItemName"
             ></input>
           </div>
@@ -27,7 +27,7 @@ export default function CompleteTask({
             <label for="description">Scavanger Hunt Item</label>
             <input
               id="description"
-              value={selectedHuntItem.name}
+              value={selectedHuntItem.label}
               name="description"
             ></input>
           </div>

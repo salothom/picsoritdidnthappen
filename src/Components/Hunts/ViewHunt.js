@@ -12,7 +12,7 @@ export default function ViewHunt({ currentHuntView, setCurrentHuntView }) {
         <img src={settings} alt="settings"></img>
       </div>
       <div className="bufferBottom">
-        <h2>{currentHuntView.name}</h2>
+        <h2>{currentHuntView.label}</h2>
         <div>{currentHuntView.description}</div>
       </div>
       <HuntItems currentHuntView={currentHuntView}></HuntItems>

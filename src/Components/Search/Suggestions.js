@@ -16,7 +16,7 @@ export default function Suggestions() {
                 key={hunt.id}
                 className="followItem"
               >
-                <div> {hunt.name} </div>
+                <div> {hunt.label} </div>
                 <div> {hunt.city}, {hunt.state} </div>
                 <div>{hunt.start}</div>
               </div>

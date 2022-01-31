@@ -35,10 +35,10 @@ export default function Hunts({ setWorkflowStep }) {
                   return (
                     <div
                       onClick={() => setCurrentHuntView(hunt)}
-                      key={hunt.id}
+                      key={hunt.value}
                       className="followItem"
                     >
-                      <div> {hunt.name} </div>
+                      <div> {hunt.label} </div>
                       <div>Current Score: {hunt.score}</div>
                       <div>End Date: {hunt.end}</div>
                     </div>
@@ -49,10 +49,10 @@ export default function Hunts({ setWorkflowStep }) {
                   return (
                     <div
                       onClick={() => setCurrentHuntView(hunt)}
-                      key={hunt.id}
+                      key={hunt.value}
                       className="followItem"
                     >
-                      <div> {hunt.name} </div>
+                      <div> {hunt.label} </div>
                       <div>Final Score: {hunt.score}</div>
                     </div>
                   );

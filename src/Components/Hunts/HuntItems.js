@@ -25,7 +25,7 @@ export default function HuntItems({ currentHuntView }) {
           return (
             <div
               onClick={() => inputChangedHandler(item)}
-              key={item.name}
+              key={item.label}
               className="huntItems"
             >
               <div>
@@ -37,7 +37,7 @@ export default function HuntItems({ currentHuntView }) {
                   checked={item.completed ? "checked" : ""}
                 ></input>
               </div>
-              <div>{item.name}</div>
+              <div>{item.label}</div>
               <div>{item.points}</div>
             </div>
           );

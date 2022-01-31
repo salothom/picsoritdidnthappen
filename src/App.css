@@ -270,6 +270,15 @@
 .twentyWidth {
   width: 20%;
 }
+.twentyFiveWidth{
+  width:25%
+}
+.fiftyWidth { 
+  width: 50%;
+}
+.sevenFiveWidth { 
+  width: 75%;
+}
 .widthFull {
   width: 100%;
 }
@@ -330,6 +339,42 @@
   color: var(--egg-shell);
   background-color: var(--dark-blue);
 }
+
+.tag{
+  border-radius: 5px;
+  pointer-events: none;
+  background-color: var(--terracotta);
+  color: white;
+  padding: 6px;
+  margin: 5px;
+}
+
+.tag::after {
+  pointer-events: all;
+  display: inline-block;
+  content: 'x';  
+  height: 20px;
+  width: 20px;
+  margin-left: 6px;
+  text-align: center;
+  color: #ccc;
+  /* background-color: #111; */
+  cursor: pointer;
+}
+
+.tag-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tag-container p {
+  /* margin: 8px 8px; */
+  /* font-weight: 300; */
+  font-size: 14px;
+  /* opacity: 0.8; */
+  letter-spacing: 1px;
+}
+
 
 .ProfileInfo {
   border: 2px black solid;
